@@ -6,3 +6,4 @@ My goal this year is to just try to complete the puzzles, so I'm doing them in T
 So, good luck getting stars, Merry Christmas and a Happy New Year!
 
 - [Day 1: Trebuchet?! 🌟🌟](day01.ts)
+- [Day 2: Cube Conundrum 🌟🌟](day02.ts)
