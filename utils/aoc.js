@@ -12,7 +12,7 @@ const digits = (data, lineSeparator = '\n') => {
 }
 
 const chars = (data, lineSeparator = '\n') => {
-  return lines (data, lineSeparator).map(line => line.split(''));
+  return lines(data, lineSeparator).map(line => line.split(''));
 }
 
 const answer = (star, answer) => {
