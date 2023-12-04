@@ -7,5 +7,6 @@ BUT, if you are searching for really cool and well done Python resolutions for t
 
 So, good luck getting stars, Merry Christmas and a Happy New Year!
 
-- [Day 1: Trebuchet?! 🌟🌟](day01.ts)
-- [Day 2: Cube Conundrum 🌟🌟](day02.ts)
+- [Day 1: Trebuchet?! 🌟🌟](day01.js)
+- [Day 2: Cube Conundrum 🌟🌟](day02.js)
+- [Day 3: Gear Ratios 🌟🌟](day03.js)
