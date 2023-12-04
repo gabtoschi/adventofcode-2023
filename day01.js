@@ -1,15 +1,15 @@
-import * as aoc from './utils/aoc';
-import input from './inputs/input01';
+const aoc = require('./utils/aoc');
+const input = require('./inputs/input01');
 
-const data: string[] = aoc.lines(input);
+const data = aoc.lines(input);
 
-const getCalibrationValues = (data: string[], getDigits: (str: string) => string | null): number => {
+const getCalibrationValues = (data, getDigits) => {
   let calibration = 0;
 
   data.forEach(line => {
     let firstChars = line.split('').reverse();
     let firstTest = '';
-    let firstDigit: string | null = null;
+    let firstDigit = null;
 
     while (!firstDigit) {
       firstTest += firstChars.pop();
@@ -18,7 +18,7 @@ const getCalibrationValues = (data: string[], getDigits: (str: string) => string
 
     let lastChars = line.split('');
     let lastTest = '';
-    let lastDigit: string | null = null;
+    let lastDigit = null;
 
     while (!lastDigit) {
       lastTest = lastChars.pop() + lastTest;
@@ -32,9 +32,9 @@ const getCalibrationValues = (data: string[], getDigits: (str: string) => string
 }
 
 // STAR 01
-const DIGITS: string[] = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-const DIGITS_REGEX: RegExp = new RegExp(DIGITS.join('|'));
-const getNumericDigits = (str: string): string | null => {
+const DIGITS = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+const DIGITS_REGEX = new RegExp(DIGITS.join('|'));
+const getNumericDigits = (str) => {
   const match = str.match(DIGITS_REGEX);
   if (match) return match[0];
   return null;
@@ -54,9 +54,9 @@ const SPELLED_DIGITS = {
   eight: '8',
   nine: '9',
 };
-const SPELLING: string[] = [...DIGITS, ...Object.keys(SPELLED_DIGITS)];
-const SPELLING_REGEX: RegExp = new RegExp(SPELLING.join('|'));
-const getSpelledDigits = (str: string): string | null => {
+const SPELLING = [...DIGITS, ...Object.keys(SPELLED_DIGITS)];
+const SPELLING_REGEX = new RegExp(SPELLING.join('|'));
+const getSpelledDigits = (str) => {
   const match = str.match(SPELLING_REGEX);
   if (match) {
     return SPELLED_DIGITS[match[0]] || match[0];
