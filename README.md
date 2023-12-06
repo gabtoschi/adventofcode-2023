@@ -12,3 +12,4 @@ So, good luck getting stars, Merry Christmas and a Happy New Year!
 - [Day 3: Gear Ratios 🌟🌟](day03.js)
 - [Day 4: Scratchcards 🌟🌟](day04.js)
 - [Day 5: If You Give A Seed A Fertilizer 🌟🌟](day05.js)
+- [Day 6: Wait For It 🌟🌟](day06.js)
