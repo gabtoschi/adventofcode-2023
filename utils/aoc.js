@@ -24,11 +24,17 @@ const isPosValid = (row, col, rows, cols) =>
   (row >= 0 && row < rows && col >= 0 && col < cols);
 
 
-const sum = (data) => {
-  return data.reduce((acc, cur) => (acc + cur), 0)
+const sum = (arr) => {
+  return arr.reduce((acc, cur) => (acc + cur), 0)
 }
-const mult = (data) => {
-  return data.reduce((acc, cur) => (acc * cur), 1)
+const mult = (arr) => {
+  return arr.reduce((acc, cur) => (acc * cur), 1)
+}
+const first = (arr) => {
+  return arr[0];
+}
+const last = (arr) => {
+  return arr[arr.length - 1];
 }
 
 module.exports = {
@@ -44,4 +50,6 @@ module.exports = {
   isPosValid,
   sum,
   mult,
+  first,
+  last,
 }
